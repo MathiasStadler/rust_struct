@@ -29,12 +29,21 @@ fn main() {
     let _user2 = User {
         active: _user1.active,
         username: _user1.username,
-        email: String::from("another@example.com"),
+        email: String::from("fast@example.com"),
         sign_in_count: _user1.sign_in_count,
     };
 
     dbg!(&_user2);
 
+    let _user3 = User {
+        email: String::from("fast1  @example.com"),
+        .._user2
+    };
+
+    dbg!(&_user3);
+
+
     }
 
+    
 // cargo run --example explore_struct_4
