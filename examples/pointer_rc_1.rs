@@ -40,3 +40,8 @@ pub fn main() {
         brad.tools.borrow()[0].upgrade().unwrap().owner.name
     );
 }
+ // https://www.makeuseof.com/rust-structs-guide-work-with/
+ //https://www.linkedin.com/pulse/constructors-static-function-rust-amit-nadiger
+ // https://github.com/danbugs/
+ //https://www.youtube.com/watch?v=mNHdD69iLzA
+ // https://www.youtube.com/watch?v=KYJ95TxEC18
