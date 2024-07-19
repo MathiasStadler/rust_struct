@@ -16,8 +16,8 @@ struct Polynomial<'a> {
 
 impl<'a> Polynomial<'a> {
 
-    fn multiply(&self, other: &Self) -> Self {
-        debug_assert_eq!(self.ctx, other.ctx);
+    fn multiply(&self, _other: &Self) -> Self {
+        // debug_assert_eq!(self.ctx, other.ctx);
         println!("I can see: {:?}", (self.ctx.n, &self.ctx.v));
         Self {
             ctx: self.ctx,
@@ -53,3 +53,6 @@ fn main() {
 
 
 // cargo run --example struct_wide_variable_1
+
+// https://users.rust-lang.org/t/how-to-create-a-struct-with-fields-which-reference-each-other/78260/17
+
