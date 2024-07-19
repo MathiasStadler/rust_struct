@@ -33,3 +33,6 @@ fn main() {
 //HERE futures
 // Listing 5-14: Using the as-yet-unwritten can_hold method
 // https://doc-rust--lang-org.translate.goog/book/ch05-03-method-syntax.html?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=de
+
+
+// https://www.makeuseof.com/rust-structs-guide-work-with/
