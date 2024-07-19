@@ -25,12 +25,21 @@ impl Rectangle {
         self.width > other.width && self.height > other.height
     }
 
+    // associated function w/o self
     fn square(size: u32) -> Self {
         Self {
             width: size,
             height: size,
         }
     }
+
+    fn new(size: u32) -> Self {
+        Self {
+            width: size,
+            height: size,
+        }
+    }
+
 }
 
 fn main() {
@@ -67,6 +76,10 @@ fn main() {
 
     let sq = Rectangle::square(3);
     println!("square {:?}", sq);
+
+    // https://rust-unofficial.github.io/patterns/idioms/ctor.html
+    let _new = Rectangle::new(5);
+    println!("new {:?}", _new);
 }
 
 // cargo run --example area_7

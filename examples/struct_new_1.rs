@@ -26,4 +26,11 @@ impl Second {
     }
 }
 
-fn main
+fn main(){
+
+
+    let _second = Second::new;
+
+    
+
+}
