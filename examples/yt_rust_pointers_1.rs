@@ -13,11 +13,11 @@ fn main() {
     });
     let n2 = Node {
         val: 2,
-        points_to: Some(n3),
+        points_to: Some(n2),
     };
     let n1 = Node {
         val: 1,
-        points_to: Some(n3),
+        points_to: Some(n1),
     };
 }
 
