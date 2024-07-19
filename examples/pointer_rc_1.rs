@@ -31,12 +31,12 @@ pub fn main() {
         owner: brad.clone(),
     });
 
-    brad.tools.barrow_mut().push(Rc::downgrade(pliers));
-    brad.tools.barrow_mut().push(Rc::downgrade(wrench));
+    brad.tools.borrow_mut().push(Rc::downgrade(&pliers));
+    brad.tools.borrow_mut().push(Rc::downgrade(&wrench));
 
     println!("Pliers owner: {} ", pliers.owner.name);
     println!(
-        "Brad's pliers owner: {}",
-        brad.tools.barrow_mut()[0].upgrade()
+        "Brad's pliers owner: {:?}",
+        brad.tools.borrow()[0].upgrade().unwrap().owner.name
     );
 }
